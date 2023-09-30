@@ -2,8 +2,12 @@ import timer from "./modules/timer";
 import menu from "./modules/menu";
 import modal from "./modules/modal";
 import scroll from "./modules/scroll";
+import calc from "./modules/calc";
+import forms from "./modules/forms";
 
-timer('01 october 2023')
+timer('10 october 2023')
 menu()
 modal()
 scroll()
+calc()
+forms()
