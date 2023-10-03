@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst menu = () => {\n    const menuBtn = document.querySelector('.menu');\n    const menu = document.querySelector('menu');\n\n    const handleMenu = () => {\n        menu.classList.toggle('active-menu')\n    };\n\n    menuBtn.addEventListener('click', handleMenu);\n\n    menu.addEventListener('click', (e) => {\n        if (e.target.classList.contains('close-btn') || e.target.matches('ul>li>a')) handleMenu\n    });\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n//# sourceURL=webpack:///./modules/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst menu = () => {\n    const body = document.querySelector('body')\n    const menu = body.querySelector('menu');\n\n    const handleMenu = () => {\n        menu.classList.toggle('active-menu')\n    };\n\n    body.addEventListener('click', (e) => {\n        if (!e.target.closest('.active-menu') || e.target.closest('.menu') || e.target.classList.contains('close-btn') || e.target.matches('ul>li>a')) {\n            handleMenu()\n        };\n    })\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menu);\n\n//# sourceURL=webpack:///./modules/menu.js?");
 
 /***/ }),
 
