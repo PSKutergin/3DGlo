@@ -7,7 +7,7 @@ const menu = () => {
     };
 
     body.addEventListener('click', (e) => {
-        if (!e.target.closest('.active-menu') || e.target.closest('.menu') || e.target.classList.contains('close-btn') || e.target.matches('ul>li>a')) {
+        if (!e.target.closest('.active-menu') && menu.classList.contains('active-menu') || e.target.closest('.menu') || e.target.classList.contains('close-btn') || e.target.matches('ul>li>a')) {
             handleMenu()
         };
     })
