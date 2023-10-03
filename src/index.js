@@ -5,6 +5,7 @@ import scroll from "./modules/scroll";
 import calc from "./modules/calc";
 import forms from "./modules/forms";
 import tabs from "./modules/tabs";
+import slider from "./modules/slider";
 
 timer('10 october 2023')
 menu()
@@ -13,3 +14,4 @@ scroll()
 calc()
 forms()
 tabs()
+slider()
